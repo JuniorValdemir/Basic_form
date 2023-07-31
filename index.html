@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./image/form-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>
+                Anuncie seu computador
+            </h3>
+        </div>
+        <div class="form-container">
+            <div class="form-header">
+                <p>
+                    Formulário
+                </p>
+            </div>
+            <div class="form-body">
+                <h1 class="form-title">
+                    Venda mais rápido seu Computador
+                </h1>
+                <p>
+                    Descreva as características e marque as opcionais que ele possui.
+                </p>
+                <form>
+                    <div class="box-input">
+                        <label for="title">
+                            Titulo do anuncio
+                            <span class="required-field">
+                                *
+                            </span>
+                        </label>
+                        <input 
+                        type="text" 
+                        name="title" 
+                        id="title" 
+                        class="block" 
+                        placeholder="Titulo para anunciar o seu Computador"
+                        minlength="1" 
+                        maxlength="30" 
+                        required /> 
+                    </div>    
+                    <div class="box-input">
+                        <label for="price">
+                            Preço
+                            <span class="required-field">
+                                *
+                            </span>
+                        </label>
+                        <input     
+                        type="number" 
+                        name="price" 
+                        id="price" 
+                        class="block" 
+                        placeholder="Defina o preço do Computador"
+                        minlength="1" 
+                        maxlength="30" 
+                        required />
+                    </div>
+                    <div class="box-input">
+                        <label for="description">
+                            Descrição
+                            <span class="required-field">
+                                *
+                            </span>
+                        </label>
+                        <textarea 
+                        name="description"
+                        id="description"
+                        class="block"
+                        placeholder="Coloque os detalhes do Computador"></textarea>
+                    </div>
+                    <div class="box-input">
+                        <label for="brand">
+                            Marca
+                            <span class="required-field">
+                                *
+                            </span>
+                        </label>
+                        <input 
+                        type="text" 
+                        name="brand" 
+                        id="brand" 
+                        class="block" 
+                        placeholder="Diga a marca do Computador"
+                        required /> 
+                    </div>  
+                    <div class="box-input">
+                        <label for="model">
+                            Modelo
+                            <span class="required-field">
+                                *
+                            </span>
+                        </label>
+                        <input 
+                        type="text" 
+                        name="model" 
+                        id="model" 
+                        class="block" 
+                        placeholder="Digite o modelo do Computador"
+                        required /> 
+                    </div> 
+                    <div class="box-input">
+                        <label for="use">
+                            Tempo de Uso
+                            <span class="required-field">
+                                *
+                            </span>
+                        </label>
+                        <input 
+                        type="number" 
+                        name="use" 
+                        id="use" 
+                        class="block" 
+                        placeholder="Dige o tempo de uso do Computador"
+                        required /> 
+                    </div> 
+                    <div class="box-input">
+                        <label for="purchase_date">
+                            Data de compra
+                            <span class="required-field">
+                                *
+                            </span>
+                        </label>
+                        <input 
+                            type="date" 
+                            name="purchase_date" 
+                            id="purchase_date" 
+                            class="block"
+                            required /> 
+                    </div>
+                    <div class="box-input">
+                        <p>
+                            Tipo de computador: 
+                            <span class="required-field">
+                                *
+                            </span>
+                        </p>
+                        <input
+                            type="radio" 
+                            name="user" 
+                            id="gamer"
+                            value="gamer"/>
+                        <label for="gamer">
+                                Gamer
+                            </label>
+                        <input
+                            type="radio" 
+                            name="user" 
+                            id="personal"
+                            value="personal"/>
+                        <label for="user">
+                                Pessoal
+                        </label>
+                    </div>
+                    <div class="optional-box">
+                        <p>
+                            Opcionais:
+                        </p>
+                        <ul class="optional-list">
+                            <li>
+                                <input 
+                                    type="checkbox" 
+                                    name="keyboard" 
+                                    id="optional[]"
+                                    value="keyboard"/>
+                                <label for="keyboard">
+                                    Teclado
+                                </label>
+                            </li>
+                            <li>
+                                <input 
+                                    type="checkbox" 
+                                    name="headset" 
+                                    id="optional[]"
+                                    value="headset"/>
+                                <label for="headset">
+                                    Fone de ouvido
+                                </label>
+                            </li>
+                            <li>
+                                <input 
+                                    type="checkbox" 
+                                    name="mouse" 
+                                    id="optional[]"
+                                    value="mouse"/>
+                                <label for="mouse">
+                                    Mouse
+                                </label>
+                            </li>
+                            <li>
+                                <input 
+                                    type="checkbox" 
+                                    name="sound-box" 
+                                    id="optional[]"
+                                    value="sound-box"/>
+                                <label for="sound-box">
+                                    Caixa de som
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="optional-box">
+                        <ul class="optional-list">
+                            <li>
+                                <input 
+                                    type="checkbox" 
+                                    name="chair" 
+                                    id="optional[]"
+                                    value="chair"/>
+                                <label for="chair">
+                                    Cadeira
+                                </label>
+                            </li>
+                            <li>
+                                <input 
+                                    type="checkbox" 
+                                    name="bench" 
+                                    id="optional[]"
+                                    value="bench"/>
+                                <label for="bench">
+                                    Bancada
+                                </label>
+                            </li>
+                            <li>
+                                <input 
+                                    type="checkbox" 
+                                    name="mouse-pad" 
+                                    id="optional[]"
+                                    value="mouse-pad"/>
+                                <label for="mouse-pad">
+                                    Mouse-pad
+                                </label>
+                            </li>
+                            <li>
+                                <input 
+                                    type="checkbox" 
+                                    name="monitor" 
+                                    id="optional[]"
+                                    value="monitor"/>
+                                <label for="monitor">
+                                    Monitor
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="box-input">
+                        <p>
+                            Fotos do Computador
+                            <span class="required-field">
+                                *
+                            </span>
+                        </p>
+                        <input type="file"
+                            name="images" 
+                            id="images"
+                            multiple
+                            accept="image/png, image/jpg"/>
+                    </div>
+                    <input 
+                        type="submit"
+                        value="Enviar"
+                        class="btn-submit"/>
+                    <input 
+                        type="reset"
+                        value="Limpar"
+                        class="btn-reset"/>
+                </form>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
