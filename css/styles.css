@@ -133,6 +133,13 @@ textarea {
     transition: 0.5s;
 }
 
+.btn-submit:hover {
+    background-color: #FFF;
+    border-color: rgb(70, 130, 180);
+    color: rgb(70, 130, 180);
+}
+
+
 .btn-reset {
     background-color: rgb(255, 0, 0);
     color: #FFF;
@@ -144,11 +151,6 @@ textarea {
     transition: 0.5s;
 }
 
-.btn-submit:hover {
-    background-color: #FFF;
-    border-color: rgb(70, 130, 180);
-    color: rgb(70, 130, 180);
-}
 
 .btn-reset:hover {
     background-color: #FFF;
